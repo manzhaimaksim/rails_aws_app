@@ -16,3 +16,5 @@ tmp/
 *.sqlite3-shm
 *.sqlite3-wal
 storage/
+
+/config/master.key
