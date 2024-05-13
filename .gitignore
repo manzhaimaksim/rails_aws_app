@@ -1,7 +1,7 @@
-*.lock
+# *.lock
 vendor/
 package-lock.json
-Gemfile.lock
+# Gemfile.lock
 node_modules/
 tmp/
 !.keep
