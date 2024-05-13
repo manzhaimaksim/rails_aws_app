@@ -20,12 +20,12 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['RAILS_AWS_APP_USER'] %>
   password: <%= ENV['rails_aws_app_DATABASE_PASSWORD'] %>
-  port: 5433
+
 
 development:
   <<: *default
   database: rails_aws_app_development
-
+  port: 5433
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
@@ -59,7 +59,7 @@ development:
 test:
   <<: *default
   database: rails_aws_app_test
-
+  port: 5433
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
